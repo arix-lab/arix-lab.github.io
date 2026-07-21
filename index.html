@@ -128,9 +128,15 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .hero img {
@@ -214,7 +220,7 @@
         /* ===== CARDS ===== */
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -268,6 +274,10 @@
         .badge.interdisciplinary {
             background: #e0e7ff;
             color: #3730a3;
+        }
+        .badge.systems {
+            background: #dcfce7;
+            color: #166534;
         }
 
         /* ===== PROJECTS ===== */
@@ -673,33 +683,48 @@
     <section class="project-section" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Flagship research initiatives from ΛRIX Lab</p>
+            <p class="section-subtitle">Active research initiatives from ΛRIX Lab</p>
 
             <div class="cards">
+                <!-- Project 1: Wireless Sensing -->
                 <div class="card">
-                    <span class="badge primary">Flagship Research</span>
-                    <h3>Evo-WISVA</h3>
+                    <span class="badge primary">Active</span>
+                    <h3>Wireless Sensing with CSI</h3>
                     <p>
-                        Physics-aware generative AI framework for spatio-temporal wireless
-                        channel prediction and autonomous network optimization.
+                        RF/Wireless sensing using Wi-Fi Channel State Information (CSI) and Channel Impulse Response (CIR).
+                        Applications include presence detection, gesture recognition, location tracking, vital signs
+                        monitoring, and health monitoring systems.
+                    </p>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 10px;">
+                        <strong>Focus:</strong> Presence Detection &amp; Vital Signs Monitoring
                     </p>
                 </div>
 
+                <!-- Project 2: Delayed Telemetry & Control-Loop Stability -->
                 <div class="card">
-                    <span class="badge emerging">Emerging Direction</span>
-                    <h3>4D Fresnel Symbol Modulation</h3>
+                    <span class="badge systems">Systems Research</span>
+                    <h3>Delayed Telemetry &amp; Control-Loop Stability</h3>
                     <p>
-                        A near-field communication framework leveraging Fresnel-domain
-                        electromagnetic properties for future wireless systems.
+                        Investigating how delayed network telemetry affects RL-based load balancing decisions in
+                        Open RAN systems. We study xApp/rApp control loops, telemetry delay, and stability
+                        conditions for AI-native network automation.
+                    </p>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 10px;">
+                        <strong>Focus:</strong> Open RAN · RL · Load Balancing · Stability Analysis
                     </p>
                 </div>
 
+                <!-- Project 3: Evo-WISVA + SCENA -->
                 <div class="card">
-                    <span class="badge interdisciplinary">Interdisciplinary</span>
-                    <h3>Computational Imaging AI</h3>
+                    <span class="badge primary">Flagship</span>
+                    <h3>Evo-WISVA + SCENA</h3>
                     <p>
-                        AI-enabled reconstruction methods for quantitative phase imaging
-                        and biomedical microscopy applications.
+                        Generative AI (VAE + LSTM) for dynamic wireless connectivity estimation in smart warehouses.
+                        Integrated with a Digital Twin and SCENA — an LLM-powered scenario analyzer for
+                        natural language querying and prescriptive decision support.
+                    </p>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 10px;">
+                        <strong>Focus:</strong> Digital Twins · GenAI · LLM · Industry 4.0
                     </p>
                 </div>
             </div>
@@ -718,8 +743,6 @@
                 <p class="venue">IEEE Transactions on Industrial Informatics <span class="pub-status accepted">Accepted</span></p>
                 <p class="links">
                     <a href="https://ieeexplore.ieee.org/abstract/document/11505898" target="_blank">IEEE Xplore</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
 
@@ -729,8 +752,6 @@
                 <p class="venue">IEEE Transactions on Machine Learning in Communications and Networking <span class="pub-status revision">In Revision</span></p>
                 <p class="links">
                     <a href="https://arxiv.org/abs/2510.06884" target="_blank">arXiv</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
 
@@ -740,8 +761,6 @@
                 <p class="venue">IEEE Transactions on Vehicular Technology <span class="pub-status review">Under Review</span></p>
                 <p class="links">
                     <a href="https://arxiv.org/abs/2603.20762" target="_blank">arXiv</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
 
@@ -751,8 +770,6 @@
                 <p class="venue">IEEE Transactions on Green Communications and Networking <span class="pub-status review">Under Review</span></p>
                 <p class="links">
                     <a href="https://arxiv.org/abs/2512.24583" target="_blank">arXiv</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
 
@@ -762,8 +779,6 @@
                 <p class="venue">Elsevier Ad Hoc Networks <span class="pub-status review">Under Review</span></p>
                 <p class="links">
                     <a href="#">arXiv (Upcoming)</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
 
@@ -773,8 +788,6 @@
                 <p class="venue">Information, MDPI <span class="pub-status published">Published 2023</span></p>
                 <p class="links">
                     <a href="https://www.mdpi.com/2078-2489/14/9/506" target="_blank">MDPI</a>
-                    <a href="#">PDF</a>
-                    <a href="#">BibTeX</a>
                 </p>
             </div>
         </div>
@@ -911,10 +924,10 @@
                 <div>
                     <h3>📋 Current Opportunities</h3>
                     <ul>
-                        <li><strong>WSN Survey Paper</strong> — Literature review on AI-native wireless sensor networks</li>
+                        <li><strong>Wireless Sensing</strong> — CSI-based presence detection and vital signs monitoring</li>
+                        <li><strong>Open RAN Stability</strong> — Delayed telemetry and RL control-loop analysis</li>
+                        <li><strong>Evo-WISVA</strong> — Digital twins and LLM-powered scenario analysis for smart warehouses</li>
                         <li><strong>4D-FSM Theory</strong> — Near-field electromagnetic modeling and precoding</li>
-                        <li><strong>Evo-WISVA Extensions</strong> — Digital twins for V2X and 6G</li>
-                        <li><strong>Computational Imaging</strong> — AI for biomedical optics and microscopy</li>
                     </ul>
                 </div>
 
