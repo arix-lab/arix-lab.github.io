@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ΛRIX Lab — AI-Native Intelligence for Physical Systems. Research in wireless communications, computational imaging, and physics-informed AI.">
+    <meta name="description" content="ΛRIX Lab — AI-Native Intelligence for Physical Systems. An independent research initiative in wireless communications, computational imaging, and physics-informed AI.">
     <title>ΛRIX Lab | AI-Native Intelligence for Physical Systems</title>
     <link rel="icon" href="assets/images/arix-logo.png" type="image/png">
 
@@ -85,7 +85,6 @@
             color: #0077cc;
         }
 
-        /* Hamburger (hidden on desktop) */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -129,15 +128,9 @@
         }
 
         @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .hero img {
@@ -187,17 +180,6 @@
         .button:hover {
             background: #005fa3;
             transform: translateY(-2px);
-            color: white;
-        }
-
-        .button-outline {
-            background: transparent;
-            color: #0077cc;
-            border: 2px solid #0077cc;
-        }
-
-        .button-outline:hover {
-            background: #0077cc;
             color: white;
         }
 
@@ -262,6 +244,30 @@
         .card .role {
             color: #0077cc;
             font-weight: 600;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .badge.primary {
+            background: #0077cc;
+            color: white;
+        }
+        .badge.emerging {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .badge.interdisciplinary {
+            background: #e0e7ff;
+            color: #3730a3;
         }
 
         /* ===== PROJECTS ===== */
@@ -449,8 +455,8 @@
 
         footer .social-links a {
             color: #94a3b8;
-            margin: 0 12px;
-            font-size: 15px;
+            margin: 0 10px;
+            font-size: 14px;
             transition: color 0.2s;
         }
 
@@ -563,13 +569,14 @@
 
         <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">People</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#people">People</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#join">Join Us</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -590,17 +597,41 @@
     </section>
 
     <!-- ===== MISSION ===== -->
-    <section>
+    <section id="mission">
         <div class="container">
             <h2 class="section-title">Mission</h2>
             <p class="section-text">
-                ΛRIX Lab is an interdisciplinary research initiative focused on building intelligent systems
-                at the intersection of artificial intelligence, wireless communications, computational imaging,
+                ΛRIX Lab is an <strong>independent research initiative</strong> exploring AI-native intelligence
+                for physical systems. We develop intelligent systems at the intersection
+                of artificial intelligence, wireless communications, computational imaging,
                 and physical modeling.
                 <br><br>
-                Our goal is to develop AI methods that understand, predict, and optimize complex physical systems
-                — making connectivity more reliable, intelligent, and accessible.
+                Our goal is to create AI methods that understand, predict, and optimize complex physical systems
+                — making connectivity more reliable, intelligent, and accessible for all.
             </p>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH PHILOSOPHY ===== -->
+    <section id="philosophy" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Research Philosophy</h2>
+            <p class="section-subtitle">How we think about AI and physical systems</p>
+
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 19px; color: #475569; line-height: 1.8;">
+                    Physical systems are governed by fundamental principles — from Maxwell's equations to
+                    wave propagation and optical diffraction. At ΛRIX Lab, we combine <strong>physics,
+                    artificial intelligence, and data-driven learning</strong> to create intelligent
+                    systems that can <strong>perceive, predict, and adapt</strong>.
+                </p>
+                <br>
+                <p style="font-size: 17px; color: #64748b;">
+                    We don't treat AI as a black box. Instead, we build <strong>interpretable,
+                    physics-aware models</strong> that respect the underlying laws of the physical world
+                    — enabling trustworthy and deployable intelligent systems.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -646,6 +677,7 @@
 
             <div class="cards">
                 <div class="card">
+                    <span class="badge primary">Flagship Research</span>
                     <h3>Evo-WISVA</h3>
                     <p>
                         Physics-aware generative AI framework for spatio-temporal wireless
@@ -654,6 +686,7 @@
                 </div>
 
                 <div class="card">
+                    <span class="badge emerging">Emerging Direction</span>
                     <h3>4D Fresnel Symbol Modulation</h3>
                     <p>
                         A near-field communication framework leveraging Fresnel-domain
@@ -662,6 +695,7 @@
                 </div>
 
                 <div class="card">
+                    <span class="badge interdisciplinary">Interdisciplinary</span>
                     <h3>Computational Imaging AI</h3>
                     <p>
                         AI-enabled reconstruction methods for quantitative phase imaging
@@ -678,7 +712,6 @@
             <h2 class="section-title">Selected Publications</h2>
             <p class="section-subtitle">Recent and forthcoming work from ΛRIX Lab</p>
 
-            <!-- Pub 1 -->
             <div class="pub-item">
                 <p class="title">AI-Driven Radio Propagation Prediction in Automated Warehouses using Variational Autoencoders</p>
                 <p class="authors"><strong>R. Gulia</strong>, et al.</p>
@@ -690,7 +723,6 @@
                 </p>
             </div>
 
-            <!-- Pub 2 -->
             <div class="pub-item">
                 <p class="title">Memory-Augmented Generative AI for Real-time Wireless Prediction in Dynamic Industrial Environments</p>
                 <p class="authors"><strong>R. Gulia</strong>, et al.</p>
@@ -702,7 +734,6 @@
                 </p>
             </div>
 
-            <!-- Pub 3 -->
             <div class="pub-item">
                 <p class="title">4D Fresnel Space-Time Modulation for Near-Field ELAA: Kinematic Multiplexing and O(N log N) Precoding at Sub-THz Frequencies</p>
                 <p class="authors"><strong>R. Gulia</strong></p>
@@ -714,7 +745,6 @@
                 </p>
             </div>
 
-            <!-- Pub 4 -->
             <div class="pub-item">
                 <p class="title">Hardware-Aware Backscatter-Compatible Antenna Selection for Ultra-Reliable Industrial Wireless Sensor Networks</p>
                 <p class="authors"><strong>R. Gulia</strong>, et al.</p>
@@ -726,7 +756,6 @@
                 </p>
             </div>
 
-            <!-- Pub 5 -->
             <div class="pub-item">
                 <p class="title">Sensing-Aware Backscatter Communications: A Survey on Envelope Stability, Waveform Design, and Selection Diversity</p>
                 <p class="authors"><strong>R. Gulia</strong>, et al.</p>
@@ -738,7 +767,6 @@
                 </p>
             </div>
 
-            <!-- Pub 6 -->
             <div class="pub-item">
                 <p class="title">Evaluation of 60 GHz Wireless Connectivity for an Automated Warehouse</p>
                 <p class="authors"><strong>R. Gulia</strong>, et al.</p>
@@ -778,60 +806,85 @@
         </div>
     </section>
 
-    <!-- ===== TEAM ===== -->
-    <section id="team">
+    <!-- ===== PEOPLE ===== -->
+    <section id="people">
         <div class="container">
-            <h2 class="section-title">Team</h2>
-            <p class="section-subtitle">The people behind ΛRIX Lab</p>
+            <h2 class="section-title">People</h2>
+            <p class="section-subtitle">The researchers behind ΛRIX Lab</p>
 
             <div class="cards">
+                <!-- Rahul Gulia -->
                 <div class="card person">
-                    <img src="assets/images/rahul.jpg" alt="Rahul Gulia" onerror="this.style.display='none'">
-                    <h3>Rahul Gulia, Ph.D.</h3>
-                    <p class="role">Founder</p>
+                    <img src="assets/images/rahul.jpg" alt="Dr. Rahul Gulia" onerror="this.style.display='none'">
+                    <h3>Dr. Rahul Gulia</h3>
+                    <p class="role">Founder &amp; Director</p>
                     <p>AI-native wireless systems, 6G networks, digital twins, and physics-informed AI.</p>
-                    <p class="affiliation">Rochester Institute of Technology</p>
+                    <p class="affiliation">Ph.D., Electrical and Computer Engineering — Rochester Institute of Technology</p>
                     <p class="links">
-                        <a href="https://www.linkedin.com/in/rahulgulia" target="_blank">LinkedIn</a> ·
-                        <a href="https://scholar.google.com" target="_blank">Google Scholar</a> ·
-                        <a href="https://github.com/RahulSinghGulia" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/rahul-gulia-a9211a93" target="_blank">LinkedIn</a> ·
+                        <a href="https://rahulsinghgulia.github.io/portfolio/#contact" target="_blank">Website</a> ·
+                        <a href="https://scholar.google.com/citations?user=arlDKMQAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
                     </p>
                 </div>
 
+                <!-- Priyanka Mann -->
                 <div class="card person">
                     <img src="assets/images/priyanka.jpg" alt="Dr. Priyanka Mann" onerror="this.style.display='none'">
                     <h3>Dr. Priyanka Mann</h3>
-                    <p class="role">Research Lead</p>
-                    <p>Computational imaging, quantitative phase microscopy, biomedical optics, and inverse problems.</p>
-                    <p class="affiliation">University of Memphis</p>
+                    <p class="role">Scientific Consultant &amp; Research Collaborator</p>
+                    <p>Computational imaging, quantitative phase microscopy, biomedical optics, inverse problems, and AI-assisted image reconstruction.</p>
+                    <p class="affiliation">Postdoctoral Researcher — University of Memphis</p>
                     <p class="links">
-                        <a href="#" target="_blank">LinkedIn</a> ·
-                        <a href="#" target="_blank">Google Scholar</a>
+                        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=inD_pzMAAAAJ" target="_blank">Google Scholar</a>
                     </p>
                 </div>
 
+                <!-- Ashish Sheikh -->
                 <div class="card person">
-                    <img src="assets/images/ashish.jpg" alt="Ashish" onerror="this.style.display='none'">
-                    <h3>Ashish</h3>
+                    <img src="assets/images/ashish.jpg" alt="Ashish Sheikh" onerror="this.style.display='none'">
+                    <h3>Ashish Sheikh</h3>
                     <p class="role">Research Collaborator</p>
-                    <p>DSP engineering, wireless signal processing, and real-time communication systems.</p>
-                    <p class="affiliation">Cisco</p>
+                    <p>WLAN PHY/L1 development, interferer detection in WLAN channels (2.4G/5G/6G), Software Defined Radios (SDR), and AI for wireless communications.</p>
+                    <p class="affiliation">Tech Lead — Signal Processing, Cisco Systems</p>
+                    <p class="links">
+                        <a href="mailto:ashish.sheikh@ieee.org">Email</a>
+                    </p>
                 </div>
 
+                <!-- Feyisayo Favour Popoola -->
                 <div class="card person">
-                    <img src="assets/images/serisha.jpg" alt="Serisha" onerror="this.style.display='none'">
-                    <h3>Serisha</h3>
+                    <img src="assets/images/feyisayo.jpg" alt="Feyisayo Favour Popoola" onerror="this.style.display='none'">
+                    <h3>Feyisayo Favour Popoola</h3>
                     <p class="role">Research Collaborator</p>
-                    <p>Wireless communications, signal processing, and AI/ML for physical systems.</p>
-                    <p class="affiliation">University of Texas at Austin</p>
+                    <p>5G/6G wireless communication, data communication, telecommunication, and ESG/SDG research.</p>
+                    <p class="affiliation">Radio Frequency (RF) &amp; Data Communication Engineer — Huawei (Lagos, Nigeria)</p>
+                    <p class="links">
+                        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=AKWBiLMAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
                 </div>
 
+                <!-- Serisha Vadlamudi -->
                 <div class="card person">
-                    <img src="assets/images/feyisayo.jpg" alt="Feyisayo" onerror="this.style.display='none'">
-                    <h3>Feyisayo</h3>
+                    <img src="assets/images/serisha.jpg" alt="Serisha Vadlamudi" onerror="this.style.display='none'">
+                    <h3>Serisha Vadlamudi</h3>
                     <p class="role">Research Collaborator</p>
-                    <p>Wireless sensor networks, communication systems, and applied AI.</p>
-                    <p class="affiliation">Nigeria</p>
+                    <p>Signal processing, machine learning, embedded systems, and AI for wireless communications.</p>
+                    <p class="affiliation">M.Sc., Electrical Engineering — The University of Texas at Dallas</p>
+                    <p class="links">
+                        <!-- Google Scholar link not available -->
+                    </p>
+                </div>
+
+                <!-- Tejaswi Rao -->
+                <div class="card person">
+                    <img src="assets/images/tejaswi.jpg" alt="Tejaswi Rao" onerror="this.style.display='none'">
+                    <h3>Tejaswi Rao</h3>
+                    <p class="role">Research Collaborator</p>
+                    <p>Machine learning, AI for wireless communications, and applied AI research.</p>
+                    <p class="affiliation">Machine Learning Engineer — Mediacom Communications</p>
+                    <p class="links">
+                        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=0eGiI1sAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -896,7 +949,7 @@
         </div>
     </section>
 
-    <!-- ===== COLLABORATION ===== -->
+    <!-- ===== CONTACT / COLLABORATION ===== -->
     <section class="collaboration" id="contact">
         <div class="container">
             <h2 class="section-title" style="color: white;">Collaborate With ΛRIX Lab</h2>
@@ -918,7 +971,8 @@
             <div class="social-links" style="margin: 15px 0;">
                 <a href="https://github.com/arix-lab" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/company/arix-lab" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com/arixlab" target="_blank">Twitter / X</a>
+                <a href="https://scholar.google.com/citations?user=arlDKMQAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+                <a href="https://arxiv.org/search/?query=Gulia+R&searchtype=author" target="_blank">arXiv</a>
                 <a href="mailto:arix.lab@outlook.com">Email</a>
             </div>
 
@@ -936,7 +990,6 @@
             navMenu.classList.toggle('open');
         });
 
-        // Close menu when a link is clicked (on mobile)
         document.querySelectorAll('#nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
