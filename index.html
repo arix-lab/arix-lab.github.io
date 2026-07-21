@@ -2,717 +2,948 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ΛRIX Lab | AI-Native Intelligence for Physical Systems</title>
-
-<style>
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
-    color: #1b263b;
-    background: #ffffff;
-    line-height: 1.6;
-}
-
-
-/* Navigation */
-
-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e7eb;
-    padding: 15px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #0b1f3a;
-}
-
-
-.logo img {
-    width: 45px;
-    height: 45px;
-}
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-
-nav a {
-    text-decoration: none;
-    color: #334155;
-    font-weight: 500;
-}
-
-
-nav a:hover {
-    color: #0077cc;
-}
-
-
-
-/* Hero */
-
-.hero {
-
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    padding: 80px 10%;
-
-    background:
-    linear-gradient(
-        135deg,
-        #f5f9ff,
-        #ffffff
-    );
-
-}
-
-
-.hero img {
-
-    width: 180px;
-    margin-bottom: 25px;
-
-}
-
-
-.hero h1 {
-
-    font-size: 55px;
-    color: #0b1f3a;
-    margin-bottom: 15px;
-
-}
-
-
-.hero h2 {
-
-    color:#0077cc;
-    font-size: 28px;
-    margin-bottom: 20px;
-
-}
-
-
-.hero p {
-
-    max-width: 850px;
-    margin:auto;
-    font-size:21px;
-    color:#475569;
-
-}
-
-
-
-.button {
-
-    display:inline-block;
-    margin-top:35px;
-    padding:14px 30px;
-
-    background:#0077cc;
-    color:white;
-
-    text-decoration:none;
-    border-radius:30px;
-
-}
-
-
-
-/* Sections */
-
-
-section {
-
-    padding:80px 10%;
-
-}
-
-
-.section-title {
-
-    text-align:center;
-    font-size:38px;
-    color:#0b1f3a;
-    margin-bottom:50px;
-
-}
-
-
-.section-text {
-
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    font-size:19px;
-    color:#475569;
-
-}
-
-
-
-/* Cards */
-
-
-.cards {
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-
-}
-
-
-
-.card {
-
-    padding:30px;
-    border-radius:15px;
-    border:1px solid #e2e8f0;
-
-    background:white;
-
-    transition:0.3s;
-
-}
-
-
-.card:hover {
-
-    transform:translateY(-5px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
-}
-
-
-.card h3 {
-
-    color:#0077cc;
-    margin-bottom:15px;
-
-}
-
-
-/* Project cards */
-
-
-.project {
-
-    background:#f8fafc;
-
-}
-
-
-
-/* Team */
-
-
-.person {
-
-    text-align:center;
-
-}
-
-
-.person h3 {
-
-    color:#0b1f3a;
-
-}
-
-
-
-.role {
-
-    color:#0077cc;
-    font-weight:600;
-
-}
-
-
-
-/* Collaboration */
-
-
-.collaboration {
-
-    background:#0b1f3a;
-    color:white;
-    text-align:center;
-
-}
-
-
-.collaboration h2 {
-
-    color:white;
-
-}
-
-
-.collaboration p {
-
-    max-width:850px;
-    margin:auto;
-
-}
-
-
-/* Footer */
-
-
-footer {
-
-    text-align:center;
-    padding:30px;
-    background:#020617;
-    color:#cbd5e1;
-
-}
-
-
-
-/* Mobile */
-
-@media(max-width:768px){
-
-nav ul {
-    display:none;
-}
-
-
-.hero h1 {
-
-font-size:40px;
-
-}
-
-
-.hero h2 {
-
-font-size:22px;
-
-}
-
-
-section {
-
-padding:60px 5%;
-
-}
-
-
-}
-
-
-</style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ΛRIX Lab — AI-Native Intelligence for Physical Systems. Research in wireless communications, computational imaging, and physics-informed AI.">
+    <title>ΛRIX Lab | AI-Native Intelligence for Physical Systems</title>
+    <link rel="icon" href="assets/images/arix-logo.png" type="image/png">
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+            color: #1b263b;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        a:hover {
+            color: #005fa3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0b1f3a;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #334155;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #0077cc;
+        }
+
+        /* Hamburger (hidden on desktop) */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #0b1f3a;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 10%;
+            background: linear-gradient(135deg, #f5f9ff, #ffffff, #eef4fa);
+            background-size: 400% 400%;
+            animation: gradientShift 18s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero img {
+            width: 180px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .hero .tagline {
+            color: #0077cc;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .hero .sub-tag {
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 21px;
+            color: #475569;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 35px;
+            background: #0077cc;
+            color: white;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: #005fa3;
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .button-outline {
+            background: transparent;
+            color: #0077cc;
+            border: 2px solid #0077cc;
+        }
+
+        .button-outline:hover {
+            background: #0077cc;
+            color: white;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+        }
+
+        .section-text {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 19px;
+            color: #475569;
+        }
+
+        /* ===== CARDS ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #0077cc;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #475569;
+        }
+
+        .card .role {
+            color: #0077cc;
+            font-weight: 600;
+        }
+
+        /* ===== PROJECTS ===== */
+        .project-section {
+            background: #f8fafc;
+        }
+
+        /* ===== NEWS ===== */
+        .news-item {
+            border-left: 4px solid #0077cc;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .news-item .date {
+            color: #0077cc;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .news-item p {
+            color: #334155;
+        }
+
+        /* ===== TEAM ===== */
+        .person img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .person .affiliation {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .person .links {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .person .links a {
+            margin: 0 5px;
+        }
+
+        /* ===== PUBLICATIONS ===== */
+        .pub-item {
+            padding: 18px 0;
+            border-bottom: 1px solid #e2e8f0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-item .title {
+            font-weight: 600;
+            color: #0b1f3a;
+            font-size: 17px;
+        }
+
+        .pub-item .authors {
+            color: #475569;
+            font-size: 15px;
+        }
+
+        .pub-item .venue {
+            color: #0077cc;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .pub-item .links {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .pub-item .links a {
+            margin-right: 15px;
+        }
+
+        .pub-status {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 12px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+
+        .pub-status.accepted {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .pub-status.revision {
+            background: #fef9c3;
+            color: #854d0e;
+        }
+        .pub-status.review {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .pub-status.published {
+            background: #e0e7ff;
+            color: #3730a3;
+        }
+
+        /* ===== COLLABORATION ===== */
+        .collaboration {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 80px 5%;
+        }
+
+        .collaboration h2 {
+            color: white;
+        }
+
+        .collaboration p {
+            max-width: 850px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        .collaboration .button {
+            background: #0077cc;
+        }
+
+        .collaboration .button:hover {
+            background: #1a8cde;
+        }
+
+        /* ===== JOIN US ===== */
+        .join-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .join-grid ul {
+            padding-left: 20px;
+            color: #475569;
+        }
+
+        .join-grid ul li {
+            margin-bottom: 8px;
+        }
+
+        .join-grid h3 {
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .join-email {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+
+        .join-email a {
+            color: #0077cc;
+            font-weight: 600;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px 5%;
+            background: #020617;
+            color: #cbd5e1;
+        }
+
+        footer .social-links a {
+            color: #94a3b8;
+            margin: 0 12px;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        footer .social-links a:hover {
+            color: #ffffff;
+        }
+
+        footer .footer-logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        footer .copy {
+            font-size: 14px;
+            margin-top: 15px;
+            color: #64748b;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px 8%;
+                border-bottom: 1px solid #e5e7eb;
+                gap: 15px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+            .hero .tagline {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .join-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .join-email {
+                grid-column: 1;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .pub-item .title {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero .tagline {
+                font-size: 18px;
+            }
+            .hero p {
+                font-size: 17px;
+            }
+            .button {
+                padding: 12px 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
-
-<!-- Navigation -->
-
-<nav>
-
-<div class="logo">
-
-<img src="assets/images/arix-logo.png">
-
-ΛRIX Lab
-
-</div>
-
-
-<ul>
-
-<li><a href="#">Home</a></li>
-<li><a href="#">Research</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">People</a></li>
-<li><a href="#">Publications</a></li>
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-
-</nav>
-
-
-
-<!-- Hero -->
-
-<section class="hero">
-
-<div>
-
-
-<img src="assets/images/arix-logo.png">
-
-
-<h1>ΛRIX Lab</h1>
-
-
-<h2>
-AI-Native Intelligence for Physical Systems
-</h2>
-
-
-<p>
-
-Developing physics-aware artificial intelligence
-for next-generation wireless communications,
-computational imaging, and intelligent sensing systems.
-
-</p>
-
-
-<a class="button" href="#research">
-Explore Research
-</a>
-
-
-</div>
-
-</section>
-
-
-
-
-<!-- Mission -->
-
-<section>
-
-<h2 class="section-title">
-Mission
-</h2>
-
-
-<p class="section-text">
-
-ΛRIX Lab is an interdisciplinary research initiative
-focused on building intelligent systems at the intersection
-of artificial intelligence, wireless communications,
-computational imaging, and physical modeling.
-
-Our goal is to develop AI methods that understand,
-predict, and optimize complex physical systems.
-
-</p>
-
-
-</section>
-
-
-
-
-<!-- Research -->
-
-<section id="research">
-
-
-<h2 class="section-title">
-Research Pillars
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-AI-Native Wireless Systems
-</h3>
-
-<p>
-
-6G networks, V2X communication,
-joint communication and sensing,
-digital twins, and near-field electromagnetic systems.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Computational Imaging
-</h3>
-
-<p>
-
-Quantitative phase imaging,
-computational microscopy,
-biomedical optics,
-and AI-based image reconstruction.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Physics-Informed AI
-</h3>
-
-<p>
-
-Machine learning approaches for
-inverse problems, wave propagation,
-and scientific discovery.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- Projects -->
-
-
-<section class="project">
-
-
-<h2 class="section-title">
-Featured Projects
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Evo-WISVA
-</h3>
-
-<p>
-
-Physics-aware generative AI framework
-for spatio-temporal wireless channel
-prediction and autonomous networks.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-4D Fresnel Symbol Modulation
-</h3>
-
-<p>
-
-A near-field communication framework
-leveraging Fresnel-domain electromagnetic
-properties for future wireless systems.
-
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Computational Imaging AI
-</h3>
-
-<p>
-
-AI-enabled reconstruction methods
-for quantitative phase imaging
-and biomedical microscopy.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- Team -->
-
-
-<section>
-
-
-<h2 class="section-title">
-Team
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card person">
-
-<h3>
-Rahul Gulia, Ph.D.
-</h3>
-
-<p class="role">
-Founder
-</p>
-
-
-<p>
-AI-native wireless systems,
-6G networks,
-digital twins,
-and physics-informed AI.
-</p>
-
-
-</div>
-
-
-
-
-<div class="card person">
-
-<h3>
-Dr. Priyanka Mann
-</h3>
-
-
-<p class="role">
-Research Lead
-</p>
-
-
-<p>
-
-Computational imaging,
-quantitative phase microscopy,
-biomedical optics,
-and inverse problems.
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- Collaboration -->
-
-
-<section class="collaboration">
-
-
-<h2 class="section-title">
-
-Collaborate With ΛRIX Lab
-
-</h2>
-
-
-<p>
-
-We welcome collaborations with researchers,
-students, and industry partners working on
-AI-enabled communication, sensing,
-and imaging technologies.
-
-</p>
-
-
-
-<a class="button" href="#">
-
-Get Involved
-
-</a>
-
-
-
-</section>
-
-
-
-
-
-<footer>
-
-© 2026 ΛRIX Lab. All rights reserved.
-
-</footer>
-
-
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/arix-logo.png" alt="ΛRIX Lab Logo">
+            ΛRIX Lab
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">People</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#join">Join Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div>
+            <img src="assets/images/arix-logo.png" alt="ΛRIX Lab Logo">
+            <h1>ΛRIX Lab</h1>
+            <p class="tagline">AI-Native Intelligence for Physical Systems</p>
+            <p class="sub-tag">Research · Innovation · Impact</p>
+            <p>
+                Developing physics-aware artificial intelligence
+                for next-generation wireless communications,
+                computational imaging, and intelligent sensing systems.
+            </p>
+            <a class="button" href="#research">Explore Research</a>
+        </div>
+    </section>
+
+    <!-- ===== MISSION ===== -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Mission</h2>
+            <p class="section-text">
+                ΛRIX Lab is an interdisciplinary research initiative focused on building intelligent systems
+                at the intersection of artificial intelligence, wireless communications, computational imaging,
+                and physical modeling.
+                <br><br>
+                Our goal is to develop AI methods that understand, predict, and optimize complex physical systems
+                — making connectivity more reliable, intelligent, and accessible.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH PILLARS ===== -->
+    <section id="research">
+        <div class="container">
+            <h2 class="section-title">Research Pillars</h2>
+            <p class="section-subtitle">Three interconnected areas driving our work</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>📡 AI-Native Wireless Systems</h3>
+                    <p>
+                        6G networks, V2X communication, joint communication and sensing,
+                        digital twins, and near-field electromagnetic systems.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🔬 Computational Imaging</h3>
+                    <p>
+                        Quantitative phase imaging, computational microscopy,
+                        biomedical optics, and AI-based image reconstruction.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🧠 Physics-Informed AI</h3>
+                    <p>
+                        Machine learning approaches for inverse problems,
+                        wave propagation, generative modeling, and scientific discovery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="project-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Flagship research initiatives from ΛRIX Lab</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Evo-WISVA</h3>
+                    <p>
+                        Physics-aware generative AI framework for spatio-temporal wireless
+                        channel prediction and autonomous network optimization.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>4D Fresnel Symbol Modulation</h3>
+                    <p>
+                        A near-field communication framework leveraging Fresnel-domain
+                        electromagnetic properties for future wireless systems.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Computational Imaging AI</h3>
+                    <p>
+                        AI-enabled reconstruction methods for quantitative phase imaging
+                        and biomedical microscopy applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section id="publications">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            <p class="section-subtitle">Recent and forthcoming work from ΛRIX Lab</p>
+
+            <!-- Pub 1 -->
+            <div class="pub-item">
+                <p class="title">AI-Driven Radio Propagation Prediction in Automated Warehouses using Variational Autoencoders</p>
+                <p class="authors"><strong>R. Gulia</strong>, et al.</p>
+                <p class="venue">IEEE Transactions on Industrial Informatics <span class="pub-status accepted">Accepted</span></p>
+                <p class="links">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/11505898" target="_blank">IEEE Xplore</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+
+            <!-- Pub 2 -->
+            <div class="pub-item">
+                <p class="title">Memory-Augmented Generative AI for Real-time Wireless Prediction in Dynamic Industrial Environments</p>
+                <p class="authors"><strong>R. Gulia</strong>, et al.</p>
+                <p class="venue">IEEE Transactions on Machine Learning in Communications and Networking <span class="pub-status revision">In Revision</span></p>
+                <p class="links">
+                    <a href="https://arxiv.org/abs/2510.06884" target="_blank">arXiv</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+
+            <!-- Pub 3 -->
+            <div class="pub-item">
+                <p class="title">4D Fresnel Space-Time Modulation for Near-Field ELAA: Kinematic Multiplexing and O(N log N) Precoding at Sub-THz Frequencies</p>
+                <p class="authors"><strong>R. Gulia</strong></p>
+                <p class="venue">IEEE Transactions on Vehicular Technology <span class="pub-status review">Under Review</span></p>
+                <p class="links">
+                    <a href="https://arxiv.org/abs/2603.20762" target="_blank">arXiv</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+
+            <!-- Pub 4 -->
+            <div class="pub-item">
+                <p class="title">Hardware-Aware Backscatter-Compatible Antenna Selection for Ultra-Reliable Industrial Wireless Sensor Networks</p>
+                <p class="authors"><strong>R. Gulia</strong>, et al.</p>
+                <p class="venue">IEEE Transactions on Green Communications and Networking <span class="pub-status review">Under Review</span></p>
+                <p class="links">
+                    <a href="https://arxiv.org/abs/2512.24583" target="_blank">arXiv</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+
+            <!-- Pub 5 -->
+            <div class="pub-item">
+                <p class="title">Sensing-Aware Backscatter Communications: A Survey on Envelope Stability, Waveform Design, and Selection Diversity</p>
+                <p class="authors"><strong>R. Gulia</strong>, et al.</p>
+                <p class="venue">Elsevier Ad Hoc Networks <span class="pub-status review">Under Review</span></p>
+                <p class="links">
+                    <a href="#">arXiv (Upcoming)</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+
+            <!-- Pub 6 -->
+            <div class="pub-item">
+                <p class="title">Evaluation of 60 GHz Wireless Connectivity for an Automated Warehouse</p>
+                <p class="authors"><strong>R. Gulia</strong>, et al.</p>
+                <p class="venue">Information, MDPI <span class="pub-status published">Published 2023</span></p>
+                <p class="links">
+                    <a href="https://www.mdpi.com/2078-2489/14/9/506" target="_blank">MDPI</a>
+                    <a href="#">PDF</a>
+                    <a href="#">BibTeX</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS ===== -->
+    <section id="news" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Latest Updates</h2>
+            <p class="section-subtitle">News and announcements from ΛRIX Lab</p>
+
+            <div class="news-item">
+                <p class="date">July 2026</p>
+                <p><strong>Evo-WISVA accepted to IEEE Transactions on Industrial Informatics</strong><br>
+                Our paper on AI-driven radio propagation prediction for automated warehouses has been accepted for publication.</p>
+            </div>
+
+            <div class="news-item">
+                <p class="date">June 2026</p>
+                <p><strong>ΛRIX Lab website launched</strong><br>
+                We're excited to announce the official launch of the ΛRIX Lab website. Follow us for updates on our research in AI-native wireless systems, computational imaging, and physics-informed AI.</p>
+            </div>
+
+            <div class="news-item">
+                <p class="date">May 2026</p>
+                <p><strong>4D-FSM preprint available on arXiv</strong><br>
+                Our paper on 4D Fresnel Space-Time Modulation for near-field ELAA is now available as a preprint on arXiv.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">Team</h2>
+            <p class="section-subtitle">The people behind ΛRIX Lab</p>
+
+            <div class="cards">
+                <div class="card person">
+                    <img src="assets/images/rahul.jpg" alt="Rahul Gulia" onerror="this.style.display='none'">
+                    <h3>Rahul Gulia, Ph.D.</h3>
+                    <p class="role">Founder</p>
+                    <p>AI-native wireless systems, 6G networks, digital twins, and physics-informed AI.</p>
+                    <p class="affiliation">Rochester Institute of Technology</p>
+                    <p class="links">
+                        <a href="https://www.linkedin.com/in/rahulgulia" target="_blank">LinkedIn</a> ·
+                        <a href="https://scholar.google.com" target="_blank">Google Scholar</a> ·
+                        <a href="https://github.com/RahulSinghGulia" target="_blank">GitHub</a>
+                    </p>
+                </div>
+
+                <div class="card person">
+                    <img src="assets/images/priyanka.jpg" alt="Dr. Priyanka Mann" onerror="this.style.display='none'">
+                    <h3>Dr. Priyanka Mann</h3>
+                    <p class="role">Research Lead</p>
+                    <p>Computational imaging, quantitative phase microscopy, biomedical optics, and inverse problems.</p>
+                    <p class="affiliation">University of Memphis</p>
+                    <p class="links">
+                        <a href="#" target="_blank">LinkedIn</a> ·
+                        <a href="#" target="_blank">Google Scholar</a>
+                    </p>
+                </div>
+
+                <div class="card person">
+                    <img src="assets/images/ashish.jpg" alt="Ashish" onerror="this.style.display='none'">
+                    <h3>Ashish</h3>
+                    <p class="role">Research Collaborator</p>
+                    <p>DSP engineering, wireless signal processing, and real-time communication systems.</p>
+                    <p class="affiliation">Cisco</p>
+                </div>
+
+                <div class="card person">
+                    <img src="assets/images/serisha.jpg" alt="Serisha" onerror="this.style.display='none'">
+                    <h3>Serisha</h3>
+                    <p class="role">Research Collaborator</p>
+                    <p>Wireless communications, signal processing, and AI/ML for physical systems.</p>
+                    <p class="affiliation">University of Texas at Austin</p>
+                </div>
+
+                <div class="card person">
+                    <img src="assets/images/feyisayo.jpg" alt="Feyisayo" onerror="this.style.display='none'">
+                    <h3>Feyisayo</h3>
+                    <p class="role">Research Collaborator</p>
+                    <p>Wireless sensor networks, communication systems, and applied AI.</p>
+                    <p class="affiliation">Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JOIN US ===== -->
+    <section id="join" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Join ΛRIX Lab</h2>
+            <p class="section-subtitle">We're always looking for motivated collaborators</p>
+
+            <div class="join-grid">
+                <div>
+                    <h3>🎯 Who We Welcome</h3>
+                    <ul>
+                        <li><strong>PhD Students</strong> — Research collaborations leading to publications</li>
+                        <li><strong>MS Students</strong> — Thesis projects and co-authorship opportunities</li>
+                        <li><strong>Undergraduate Researchers</strong> — Mentorship and research experience</li>
+                        <li><strong>Industry Partners</strong> — Applied research and technology transfer</li>
+                        <li><strong>Academic Collaborators</strong> — Cross-institutional research projects</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>📋 Current Opportunities</h3>
+                    <ul>
+                        <li><strong>WSN Survey Paper</strong> — Literature review on AI-native wireless sensor networks</li>
+                        <li><strong>4D-FSM Theory</strong> — Near-field electromagnetic modeling and precoding</li>
+                        <li><strong>Evo-WISVA Extensions</strong> — Digital twins for V2X and 6G</li>
+                        <li><strong>Computational Imaging</strong> — AI for biomedical optics and microscopy</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>✨ What You Gain</h3>
+                    <ul>
+                        <li>Co-authorship on IEEE journal papers</li>
+                        <li>Mentorship in research and academic writing</li>
+                        <li>Exposure to cutting-edge AI + wireless research</li>
+                        <li>Network of international collaborators</li>
+                        <li>Experience working in a distributed research team</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>📌 Requirements</h3>
+                    <ul>
+                        <li>Strong interest in AI, wireless, or imaging</li>
+                        <li>Ability to commit ~5–10 hours/week</li>
+                        <li>Self-motivated and collaborative mindset</li>
+                        <li>Good written communication skills</li>
+                    </ul>
+                </div>
+
+                <div class="join-email">
+                    <h3>📧 Get in Touch</h3>
+                    <p style="margin-bottom: 5px;">Send your CV and research interests to:</p>
+                    <p><a href="mailto:arix.lab@outlook.com">arix.lab@outlook.com</a></p>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 10px;">We'll respond within 3–5 business days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COLLABORATION ===== -->
+    <section class="collaboration" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Collaborate With ΛRIX Lab</h2>
+            <p>
+                We welcome collaborations with researchers, students, and industry partners working on
+                AI-enabled communication, sensing, and imaging technologies.
+            </p>
+            <br>
+            <a class="button" href="#join">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p class="footer-logo">ΛRIX Lab</p>
+            <p style="color: #94a3b8; font-size: 15px;">AI-Native Intelligence for Physical Systems</p>
+
+            <div class="social-links" style="margin: 15px 0;">
+                <a href="https://github.com/arix-lab" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/company/arix-lab" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/arixlab" target="_blank">Twitter / X</a>
+                <a href="mailto:arix.lab@outlook.com">Email</a>
+            </div>
+
+            <p class="copy">© 2026 ΛRIX Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== HAMBURGER MENU SCRIPT ===== -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+
+        // Close menu when a link is clicked (on mobile)
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('open');
+            });
+        });
+    </script>
 
 </body>
 
