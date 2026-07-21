@@ -2,148 +2,716 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ΛRIX Lab</title>
+<title>ΛRIX Lab | AI-Native Intelligence for Physical Systems</title>
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background: #ffffff;
-            color: #1a1a1a;
-        }
+<style>
 
-        header {
-            padding: 60px;
-            text-align: center;
-            background: #f5f8fc;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        header img {
-            width: 180px;
-            margin-bottom: 25px;
-        }
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    color: #1b263b;
+    background: #ffffff;
+    line-height: 1.6;
+}
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: #0b1f3a;
-        }
 
-        h2 {
-            color: #0066cc;
-        }
+/* Navigation */
 
-        p {
-            font-size: 20px;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: auto;
-        }
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
 
-        section {
-            padding: 50px;
-            max-width: 1000px;
-            margin: auto;
-        }
 
-        .pillars {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b1f3a;
+}
 
-        .card {
-            flex: 1;
-            min-width: 250px;
-            padding: 25px;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-        }
 
-    </style>
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+}
+
+
+nav a:hover {
+    color: #0077cc;
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 80px 10%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f5f9ff,
+        #ffffff
+    );
+
+}
+
+
+.hero img {
+
+    width: 180px;
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 55px;
+    color: #0b1f3a;
+    margin-bottom: 15px;
+
+}
+
+
+.hero h2 {
+
+    color:#0077cc;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    max-width: 850px;
+    margin:auto;
+    font-size:21px;
+    color:#475569;
+
+}
+
+
+
+.button {
+
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 30px;
+
+    background:#0077cc;
+    color:white;
+
+    text-decoration:none;
+    border-radius:30px;
+
+}
+
+
+
+/* Sections */
+
+
+section {
+
+    padding:80px 10%;
+
+}
+
+
+.section-title {
+
+    text-align:center;
+    font-size:38px;
+    color:#0b1f3a;
+    margin-bottom:50px;
+
+}
+
+
+.section-text {
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:19px;
+    color:#475569;
+
+}
+
+
+
+/* Cards */
+
+
+.cards {
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+}
+
+
+
+.card {
+
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #e2e8f0;
+
+    background:white;
+
+    transition:0.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+.card h3 {
+
+    color:#0077cc;
+    margin-bottom:15px;
+
+}
+
+
+/* Project cards */
+
+
+.project {
+
+    background:#f8fafc;
+
+}
+
+
+
+/* Team */
+
+
+.person {
+
+    text-align:center;
+
+}
+
+
+.person h3 {
+
+    color:#0b1f3a;
+
+}
+
+
+
+.role {
+
+    color:#0077cc;
+    font-weight:600;
+
+}
+
+
+
+/* Collaboration */
+
+
+.collaboration {
+
+    background:#0b1f3a;
+    color:white;
+    text-align:center;
+
+}
+
+
+.collaboration h2 {
+
+    color:white;
+
+}
+
+
+.collaboration p {
+
+    max-width:850px;
+    margin:auto;
+
+}
+
+
+/* Footer */
+
+
+footer {
+
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#cbd5e1;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav ul {
+    display:none;
+}
+
+
+.hero h1 {
+
+font-size:40px;
+
+}
+
+
+.hero h2 {
+
+font-size:22px;
+
+}
+
+
+section {
+
+padding:60px 5%;
+
+}
+
+
+}
+
+
+</style>
+
 
 </head>
 
 
 <body>
 
-<header>
 
-    <img src="assets/images/arix-logo.png" alt="ΛRIX Lab Logo">
+<!-- Navigation -->
 
-    <h1>ΛRIX Lab</h1>
+<nav>
 
-    <h2>AI-Native Intelligence for Physical Systems</h2>
+<div class="logo">
 
-    <p>
-        Building physics-aware artificial intelligence systems
-        for next-generation wireless communications,
-        computational imaging, and intelligent sensing.
-    </p>
+<img src="assets/images/arix-logo.png">
 
-</header>
-
-
-<section>
-
-<h2>Research Pillars</h2>
-
-<div class="pillars">
-
-<div class="card">
-<h3>AI-Native Wireless Systems</h3>
-
-<p>
-6G networks, digital twins, joint communication and sensing,
-V2X, and near-field electromagnetic systems.
-</p>
+ΛRIX Lab
 
 </div>
 
 
-<div class="card">
+<ul>
 
-<h3>Computational Imaging</h3>
+<li><a href="#">Home</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">People</a></li>
+<li><a href="#">Publications</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+
+</nav>
+
+
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div>
+
+
+<img src="assets/images/arix-logo.png">
+
+
+<h1>ΛRIX Lab</h1>
+
+
+<h2>
+AI-Native Intelligence for Physical Systems
+</h2>
+
 
 <p>
-Quantitative phase imaging, computational microscopy,
-biomedical optics, and AI-based reconstruction.
+
+Developing physics-aware artificial intelligence
+for next-generation wireless communications,
+computational imaging, and intelligent sensing systems.
+
 </p>
 
-</div>
 
+<a class="button" href="#research">
+Explore Research
+</a>
 
-<div class="card">
-
-<h3>Physics-Informed AI</h3>
-
-<p>
-Machine learning for inverse problems,
-wave propagation, and intelligent physical systems.
-</p>
-
-</div>
 
 </div>
 
 </section>
 
 
+
+
+<!-- Mission -->
+
 <section>
 
-<h2>About ΛRIX Lab</h2>
+<h2 class="section-title">
+Mission
+</h2>
 
-<p>
+
+<p class="section-text">
+
 ΛRIX Lab is an interdisciplinary research initiative
-exploring the intersection of artificial intelligence,
-wireless communications, computational imaging,
-and physics-driven modeling.
+focused on building intelligent systems at the intersection
+of artificial intelligence, wireless communications,
+computational imaging, and physical modeling.
+
+Our goal is to develop AI methods that understand,
+predict, and optimize complex physical systems.
+
 </p>
 
+
 </section>
+
+
+
+
+<!-- Research -->
+
+<section id="research">
+
+
+<h2 class="section-title">
+Research Pillars
+</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+AI-Native Wireless Systems
+</h3>
+
+<p>
+
+6G networks, V2X communication,
+joint communication and sensing,
+digital twins, and near-field electromagnetic systems.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Computational Imaging
+</h3>
+
+<p>
+
+Quantitative phase imaging,
+computational microscopy,
+biomedical optics,
+and AI-based image reconstruction.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Physics-Informed AI
+</h3>
+
+<p>
+
+Machine learning approaches for
+inverse problems, wave propagation,
+and scientific discovery.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Projects -->
+
+
+<section class="project">
+
+
+<h2 class="section-title">
+Featured Projects
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Evo-WISVA
+</h3>
+
+<p>
+
+Physics-aware generative AI framework
+for spatio-temporal wireless channel
+prediction and autonomous networks.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+4D Fresnel Symbol Modulation
+</h3>
+
+<p>
+
+A near-field communication framework
+leveraging Fresnel-domain electromagnetic
+properties for future wireless systems.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Computational Imaging AI
+</h3>
+
+<p>
+
+AI-enabled reconstruction methods
+for quantitative phase imaging
+and biomedical microscopy.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Team -->
+
+
+<section>
+
+
+<h2 class="section-title">
+Team
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card person">
+
+<h3>
+Rahul Gulia, Ph.D.
+</h3>
+
+<p class="role">
+Founder
+</p>
+
+
+<p>
+AI-native wireless systems,
+6G networks,
+digital twins,
+and physics-informed AI.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card person">
+
+<h3>
+Dr. Priyanka Mann
+</h3>
+
+
+<p class="role">
+Research Lead
+</p>
+
+
+<p>
+
+Computational imaging,
+quantitative phase microscopy,
+biomedical optics,
+and inverse problems.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Collaboration -->
+
+
+<section class="collaboration">
+
+
+<h2 class="section-title">
+
+Collaborate With ΛRIX Lab
+
+</h2>
+
+
+<p>
+
+We welcome collaborations with researchers,
+students, and industry partners working on
+AI-enabled communication, sensing,
+and imaging technologies.
+
+</p>
+
+
+
+<a class="button" href="#">
+
+Get Involved
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 ΛRIX Lab. All rights reserved.
+
+</footer>
+
 
 
 </body>
